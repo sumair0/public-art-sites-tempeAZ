@@ -11,6 +11,7 @@ import type {FeatureCollection} from 'geojson';
 import { geojsondata } from './GeoJSONData';
 import Image from 'next/image';
 import { artInstallationsPerYear } from './util';
+import tempeLogo from 'public/636332012702870000.jpeg';
 
 
 const geojson: FeatureCollection = geojsondata;
@@ -35,7 +36,7 @@ export default function Home() {
       <div className="flex flex-col">
         <div className='flex flex-row text-2xl justify-center text-center py-5 text-[#0B406A]'>
           <Image
-            src="/636332012702870000.jpeg"
+            src={tempeLogo}
             width={200}
             height={200}
             alt="Tempe"
